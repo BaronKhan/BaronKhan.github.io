@@ -18,7 +18,7 @@
 					<li><a href="#top">Top</a></li>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="work.html">Work</a></li>
-					<li><a href="#projects">Projects</a></li>
+					<li><a href="projects.html">Projects</a></li>
 					<li><a href="assets/baron_khan_-_cv.pdf" target="_blank">Résumé</a></li>
 				</ul>
 			</nav>
@@ -90,22 +90,22 @@
 						<div class="row">
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/picGears.png" alt="" /></a>
-									<h3><a href="#">G.E.A.R.S - Arduino Robot</a></h3>
+									<a href="projects.html#gears" class="image featured"><img src="images/picGears.png" alt="" /></a>
+									<h3><a href="projects.html#gears">G.E.A.R.S - Arduino Robot</a></h3>
 									<p>Voice recognition | Bluetooth control<br>Object detection | Obstacle avoidance</p>
 								</article>
 							</div>
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/picResize.png" alt="" /></a>
-									<h3><a href="#">Resize - iOS/Android</a></h3>
+									<a href="projects.html#resize" class="image featured"><img src="images/picResize.png" alt="" /></a>
+									<h3><a href="projects.html#resize">Resize - iOS/Android</a></h3>
 									<p>A challenging arcade game for mobile.<br>Over 500 downloads on iOS/Android.</p>
 								</article>
 							</div>
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/picCCompiler.png" alt="" /></a>
-									<h3><a href="#">MIPS GNU C Compiler</a></h3>
+									<a href="projects.html#compiler" class="image featured"><img src="images/picCCompiler.png" alt="" /></a>
+									<h3><a href="projects.html#compiler">MIPS GNU C Compiler</a></h3>
 									<p>A C90 to MIPS32 compiler for PC.<br>Fully functional with error-handling.</p>
 								</article>
 							</div>
@@ -113,29 +113,29 @@
 						<div class="row">
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/picTimeline.jpg" alt="" /></a>
-									<h3><a href="#">TIMELINE</a></h3>
+									<a href="projects.html#timeline" class="image featured"><img src="images/picTimeline.jpg" alt="" /></a>
+									<h3><a href="projects.html#timeline">TIMELINE</a></h3>
 									<p>A smart washing line timer for outdoors.<br>IoT device | Environmentally friendly<br>Group Project</p>
 								</article>
 							</div>
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/picArm.png" alt="" /></a>
-									<h3><a href="#">ARM CPU Emulator</a></h3>
+									<a href="projects.html#armemulator" class="image featured"><img src="images/picArm.png" alt="" /></a>
+									<h3><a href="projects.html#armemulator">ARM CPU Emulator</a></h3>
 									<p>An ARM7TDMI assembler and simulator.<br> Fully functional with a web-based GUI.<br>Group Project</p>
 								</article>
 							</div>
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/picJeff.jpg" alt="" /></a>
-									<h3><a href="#">Raspberry Pi Robot</a></h3>
+									<a href="projects.html#jeff" class="image featured"><img src="images/picJeff.jpg" alt="" /></a>
+									<h3><a href="projects.html#jeff">Raspberry Pi Robot</a></h3>
 									<p>Waypoint navigation | Wall following<br>Place recognition | Object search<br>Group Project</p>
 								</article>
 							</div>
 						</div>
 						<footer>
 							<p>You haven't seen anything yet.</p>
-							<a href="#project" class="button big scrolly">Check out my other projects</a>
+							<a href="projects.html" class="button big scrolly">Check out my other projects</a>
 						</footer>
 					</div>
 				</article>
@@ -151,6 +151,28 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="http://code.jquery.com/jquery-latest.js"></script>
+			<script type="text/javascript">
+			(function($) {          
+			    $(document).ready(function(){ 
+			    	var lastScrollTop = 0;                   
+			        $(window).scroll(function(){                          
+						var st = $(this).scrollTop();
+						if ((st - lastScrollTop > 200) || (st - lastScrollTop < -50)){
+							if (st > lastScrollTop){
+								// downscroll code
+								 $('nav').fadeOut(500);
+							} else {
+								// upscroll code
+								$('nav').fadeIn(500);
+							}
+							lastScrollTop = st;
+						}
+			        });
+			    });
+			})(jQuery);
+			</script>
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>

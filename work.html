@@ -18,7 +18,7 @@
 					<li><a href="#top">Top</a></li>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="work.html">Work</a></li>
-					<li><a href="#cisco">Projects</a></li>
+					<li><a href="projects.html">Projects</a></li>
 					<li><a href="assets/baron_khan_-_cv.pdf" target="_blank">Résumé</a></li>
 				</ul>
 			</nav>
@@ -26,7 +26,8 @@
 		<!-- Home -->
 			<div class="wrapper style1 first">
 				<article class="container" id="top">
-					<center><h1><b>Work Experience</b></h1></center>
+					<center><h1>Work Experience</h1></center>
+					<center><p>I've been fortunate to have worked at amazing places with amazing people.</p></center>
 					<div id="content">
 						<!-- Content -->
 						<article>
@@ -126,6 +127,28 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="http://code.jquery.com/jquery-latest.js"></script>
+			<script type="text/javascript">
+			(function($) {          
+			    $(document).ready(function(){ 
+			    	var lastScrollTop = 0;                   
+			        $(window).scroll(function(){                          
+						var st = $(this).scrollTop();
+						if ((st - lastScrollTop > 200) || (st - lastScrollTop < -50)){
+							if (st > lastScrollTop){
+								// downscroll code
+								 $('nav').fadeOut(500);
+							} else {
+								// upscroll code
+								$('nav').fadeIn(500);
+							}
+							lastScrollTop = st;
+						}
+			        });
+			    });
+			})(jQuery);
+			</script>
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
