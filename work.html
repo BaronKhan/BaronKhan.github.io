@@ -16,7 +16,7 @@
 		<!-- Nav -->
 			<nav id="nav">
 				<ul class="container">
-					<li><a href="#top">Top</a></li>
+					<!-- <li><a href="#top">Top</a></li> -->
 					<li><a href="index.html">Home</a></li>
 					<li><a href="work.html">Work</a></li>
 					<li><a href="projects.html">Projects</a></li>
@@ -24,111 +24,45 @@
 				</ul>
 			</nav>
 
-		<!-- Home -->
-			<div class="wrapper style1 first">
-				<article class="container" id="top">
-					<center><h1>Work Experience</h1></center>
-					<center><p>I've been fortunate to have worked at amazing places with amazing people.</p></center>
-					<div id="content">
-						<!-- Content -->
-						<article>
-							<div id="cisco">
-								<h2>Software Engineering Intern at Cisco</h2>
-								<div class="row">
-									<div class="8u 12u(mobile)">
-									<h3>April 2017 - Present | London, United Kingdom</h3>
+		<!-- Work -->
+      <div class="wrapper style3">
+        <article id="work">
+          <header>
+            <h2>Here's where I've worked.</h2>
+            <p>I'm able to work equally well, both, as an integral member of a team and autonomously as required.</p>
+          </header>
+          <div class="container">
+            <div class="row">
+              <div class="4u 12u(mobile)">
+                <section class="box style1">
+                  <img src="images/logoCisco.png" alt="" />
+                  <h4>Software Engineer</h4>
+                  <p>Developing the Cisco Meeting Server.<br> Interned on the WebEx Board team.</p>
+                </section>
+              </div>
+              <div class="4u 12u(mobile)">
+                <section class="box style1">
+                  <!-- <a href="work.html#uta" class="image featured"> --><img src="images/logoImperial.jpg" alt="" /><!-- </a> -->
+                  <h4>Undergraduate Teaching Assistant</h4>
+                  <p>Supported first-year students with their software engineering course. (part-time)</p>
+                </section>
+              </div>
+              <div class="4u 12u(mobile)">
+                <section class="box style1">
+                  <!-- <a href="work.html#naturalmotion" class="image featured"> --><img src="images/logoNaturalMotion.jpg" alt="" /><!-- </a> -->
+                  <h4>Games Programming Intern</h4>
+                  <p>Contributed to the development of the AAA smartphone game, <i>Clumsy Ninja</i>.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+<!--           <footer>
+            <a href="work.html" class="button big scrolly">See more of my work experience</a>
+          </footer> -->
+        </article>
+      </div>
 
-										<p>Worked on the <a href="http://www.cisco.com/c/en/us/products/collaboration-endpoints/spark-board/index.html" target="_blank">Cisco Spark Board</a> development team for the first three months, adding voice recognition to
-										the Spark Boards. Also contributed to various bug fixes related to the media framework and the user
-										interface of the application. I then transferred to the 
-										<a href="http://www.cisco.com/c/en/us/products/conferencing/meeting-server/index.html"> Cisco Meeting Server</a>
-										 team after three months, and improved media coverage in the auto-testing facilities for CMS.</p>
-										 <p>Actively coded in C, C++, Java and Python, while utilising several tools such as Git, Jam, Make, Phabricator,
-										Arcanist, and Docker.</p>
-
-									</div>
-
-									<div class="4u 12u(mobile)">
-										<figure class="image featured">
-											<img src="images/picSparkBoard.png" alt="" />
-											<figcaption>A Spark Board used in a conference meeting</figcaption>
-										</figure>
-										
-									</div>
-								</div>
-
-								<h3><i>Hey, Spark!</i></h3>
-								<p>The <i>Hey, Spark!</i> project aims to add voice recognition functionality to the Cisco Spark Boards from
-								scratch, to allow multiple users to execute different commands on the Spark Board using just their
-								voice, such as starting or ending a call, returning to the dashboard, creating new chatrooms, and more.</p>
-
-								<p>This project uses the <a href="https://developer.nvidia.com/tensorrt" target="_blank">Nvidia TensorRT</a> API - a deep learning inference optimizer and runtime engine - to
-								perform the "Hey Spark" detection on the GPU, and the <a href="https://www.houndify.com/" target="_blank">Houndify</a> cloud service for the voice requests.</p>
-
-								<h3><i>Media and Layout Testing Tools</i></h3>
-								 <p>Added new tools for testing media and layouts for the Cisco Meeting Server. This includes
-								 creating video and audio testing capabilities for SIP calls connected to a server. Also added the ability to
-								 overlay QR codes onto video streams which can be decoded to determine whether the calls are in the right places
-								 of a video stream (such as whether the active speaker is the largest pane, and if the participant PiPs are in the 
-								 correct locations).</p>
-							</div>
-
-							<hr>
-
-							<div id="uta">
-								<h2>Undergraduate Teaching Assistant at Imperial College London</h2>
-								<h3>October 2016 - March 2017 | London, United Kingdom</h3>
-
-								<p>Supported first-year students with their C++ software engineering courses in the computing labs for two-four
-								hours every week. I also invigilated assessed programming tests during the spring term.</p>
-							</div>
-
-							<hr>
-
-							<div id="naturalmotion">
-								<h2>Programming Intern at NaturalMotion</h2>
-								<h3>July 2017 - September 2017 | Oxford, United Kingdom</h3>
-								<div class="row">
-									<div class="4u 12u(mobile)">
-										<span class="image featured"><img src="images/picClumsy.png" alt="" /></span>
-									</div>
-									<div class="8u 12u(mobile)">
-
-										<p>Assisted with various programming projects, including coding in C++ for the AAA mobile game,
-										<a href="http://www.naturalmotion.com/clumsy-ninja">Clumsy Ninja</a>, and contributed to the
-										latest update with bug fixes and new events, while writing new
-										development tools in C#. Implemented new tracking metrics for rewarded video ads and completely
-										overhauled the entire debug menu. I was also a member of the winning team in the Q3 hackathon creating the
-										VR experience, “Posing with Friends”</p>
-
-									</div>
-								</div>
-
-								<h3><i>Clumsy Ninja Event Tool</i></h3>
-								<p>I created a tool for easily creating new timed events for Clumsy Ninja, where players are given a limted number of days
-								to collect in-game currency to unlock in-game rewards such as exclusive suits. Coded in C# using the
-								.NET Framework. The tool managed to decrease the average time to create an event from one whole day to just 10 minutes.
-								This tool was used to create the Winter 2016/17 events.</p>
-
-							</div>
-
-							<hr>
-
-							<div id="bt">
-								<h2>Work Shadowing at BT</h2>
-								<h3>June 2011 | London, United Kingdom</h3>
-
-								<p>Assisted an engineer in fault tracking in telecom systems, performing all tasks to the highest standard.</p>
-							</div>
-
-						</article>
-
-					</div>
-				</article>	
-				</div>
-			</div>
-
-			<div class="wrapper2 style3">
+			<!-- <div class="wrapper2 style3">
 				<header><a href="assets/baron_khan_-_cv.pdf" target="_blank" class="button big scrolly">Take a look at my résumé</a></header>
 				<h2>And find me on...</h2>
 				<ul class="social">
@@ -137,7 +71,7 @@
 					<li><a href="https://www.youtube.com/channel/UCeWu79YSdpXFaUPKJKdfGFw" target="_blank" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
 				</ul>
 			</div>
-
+ -->
 		<!-- Scripts -->
 			<script src="assets/js/jquery-latest.js"></script>
 			<script type="text/javascript">
